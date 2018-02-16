@@ -1,4 +1,4 @@
-# simple-neural-network
+# dynamic-neural-network
 
 Learning about neural networks by exploring Keras, TensorFlow, and Pandas libraries.
 
