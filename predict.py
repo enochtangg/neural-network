@@ -120,6 +120,9 @@ class KerasNeuralNetwork:
 
             overfitted = False
 
+        if not optimized_model:
+            optimized_model = ordered_group_models.keys()[0]
+
         # Evaluating the optimized model
         evaluation = optimized_model.evaluate(self.x_test, self.y_test)
         print("{}: {}".format(optimized_model.metrics_names[0], evaluation[0]))
